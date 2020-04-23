@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/holo_blue_dark"
+    android:layout_height="match_parent"
+    tools:context=".SigninActivity">
+
+    <TextView
+        android:id="@+id/etSignInTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="LOG IN "
+        android:layout_margin="15dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etSigninEmail"
+        android:layout_below="@+id/etSignInTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/textfields_input"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etSignInPass"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/textfields_input"
+        android:hint="Enter Password"
+        android:layout_below="@id/etSigninEmail"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/etSigninBtn"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:layout_height="60dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_background"
+        android:onClick="signIn"
+        android:textSize="30sp"
+        android:layout_below="@+id/etSignInPass"
+        android:text="LOG IN" />
+
+    <TextView
+        android:id="@+id/etSignup"
+        android:layout_below="@id/etSigninBtn"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:onClick="signup"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:text="Don't an account? Please sign up here!" />
+
+</RelativeLayout>

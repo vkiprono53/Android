@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/holo_blue_dark"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <TextView
+        android:id="@+id/etSignupTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="SIGN UP "
+        android:layout_margin="5dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imgSignup"
+        android:layout_width="100dp"
+
+        android:layout_height="100dp"
+        android:background="@drawable/img_background"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etSignupTitle"
+    />
+
+    <EditText
+        android:id="@+id/etSignupName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:layout_below="@id/imgSignup"
+        android:background="@drawable/textfields_input"
+        android:hint="Enter Your Name"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etSignupEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/etSignupName"
+        android:layout_margin="15dp"
+        android:background="@drawable/textfields_input"
+        android:ems="10"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/etSignupPass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etSignupEmail"
+        android:layout_margin="15dp"
+        android:background="@drawable/textfields_input"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/etSignupBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etSignupPass"
+        android:layout_margin="15dp"
+        android:background="@drawable/btn_background"
+        android:text="SIGN UP"
+        android:textColor="@android:color/white"
+        android:onClick="signUp"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/etSignin"
+        android:layout_below="@id/etSignupBtn"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:onClick="signin"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:text="Have an account? Please sign in" />
+
+
+</RelativeLayout>
