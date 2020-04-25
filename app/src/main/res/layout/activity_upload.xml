@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/holo_blue_dark"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".UploadActivity">
+
+    <TextView
+        android:id="@+id/etUploadTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="60dp"
+        android:text="Upload Here"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUpload"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:civ_border_width="2dp"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@id/etUploadTitle"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/img_background"
+        android:onClick="selectImg" />
+
+    <EditText
+        android:id="@+id/etUploadComment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/imgUpload"
+        android:layout_marginBottom="60dp"
+
+        android:background="@drawable/textfields_input"
+        android:ems="10"
+        android:hint="Enter your Comment here"
+        android:inputType="textPersonName"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/etUploadBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etUploadComment"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/btn_background"
+        android:onClick="upload"
+        android:text="UPLOAD"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+</RelativeLayout>

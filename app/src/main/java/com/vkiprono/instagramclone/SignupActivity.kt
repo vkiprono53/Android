@@ -18,6 +18,7 @@ import androidx.annotation.RequiresApi
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
+import com.vkiprono.instagramclone.models.User
 import kotlinx.android.synthetic.main.activity_signup.*
 import java.lang.Exception
 import java.util.*
@@ -75,7 +76,7 @@ class SignupActivity : AppCompatActivity() {
     }
 
     @RequiresApi(Build.VERSION_CODES.M)
-    fun selectImg(view: View) {
+   fun selectImg(view: View) {
         Log.d("INSIDE SELECT IMAGE", "BEGINNING TO SELECT IMAGE")
 
         if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {

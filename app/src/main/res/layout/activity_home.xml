@@ -8,8 +8,14 @@
     tools:context=".HomeActivity">
 
     <TextView
+        android:id="@+id/etUploadTitle"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="WELCOME HOME"/>
+        android:layout_height="60dp"
+        android:text="RECENT FEEDS"
+        android:layout_margin="5dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
 
 </RelativeLayout>
