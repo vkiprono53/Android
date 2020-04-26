@@ -32,6 +32,8 @@
     <EditText
         android:id="@+id/etUploadComment"
         android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_height="50dp"
         android:layout_below="@id/imgUpload"
         android:layout_marginBottom="60dp"
@@ -48,6 +50,8 @@
         android:layout_height="50dp"
         android:layout_below="@+id/etUploadComment"
         android:layout_marginBottom="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/btn_background"
         android:onClick="upload"
         android:text="UPLOAD"
